@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siphiwe Khumalo - Frontend Developer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0D143A;
+      color: #1e293b;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: #C5CCF2;
+      padding: 50px 60px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease-in-out;
+    }
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border: 4px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 6px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .title {
+      font-size: 1.2em;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    .contact {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 0.95em;
+      color: #475569;
+    }
+
+    .contact a {
+      color: #334155;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.2s ease;
+    }
+
+    .contact a:hover {
+      color: #6366f1;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #1e293b;
+    }
+
+    p, li {
+      font-size: 1em;
+      color: #334155;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .project {
+      margin-bottom: 20px;
+      padding: 18px 22px;
+      background: #9FAAE9 ;
+      border-radius: 10px;
+      border-left: 4px solid #6366f1;
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-2px);
+    }
+
+    .project h3 {
+      margin: 0 0 6px 0;
+      font-size: 1.1em;
+      color: #0f172a;
+    }
+
+    .skills-list, .cert-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+    }
+
+    .skills-list li, .cert-list li {
+      background: #e2e8f0;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.95em;
+      color: #1e293b;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      .contact a {
+        display: block;
+        margin: 6px 0;
+      }
+
+      .skills-list, .cert-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="profile-pic">
+  <img src="Image.jpg" alt="Profile Photo of Siphiwe Khumalo">
+</div>
+      <h1>Siphiwe Khumalo</h1>
+      <div class="title">Junior Frontend Developer</div>
+    </header>
+
+    <div class="contact">
+      <a href="mailto:siphiwe.dev@example.com">📧 Siphiwekhumalo817@gmail.com</a> |
+      <a href="tel:+27600000000">📱 +27 638776984</a> |
+      <a href="https://linkedin.com/in/siphiwekhumalo" target="_blank">💼 linkedin.com/in/siphiwekhumalo</a>
+    </div>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>I’m Siphiwe Khumalo, a curious and creative thinker who enjoys exploring new ideas and solving problems in unique ways. I thrive when learning, whether it’s diving into the latest tech trends, experimenting with code, or reflecting on how things work beneath the surface. I value honesty, consistency, and keeping things genuine both in my work and in life. Outside of coding and development, I enjoy immersing myself in stories, whether through books, travel, or even just observing the world around me. I believe in approaching challenges with patience and an open mind, and I’m always looking for opportunities to grow, contribute, and make an impact in meaningful ways.
+       Also, A creative and detail-oriented junior frontend developer with a passion for clean code,
+        responsive design, and intuitive user experiences. Skilled in modern web technologies and frontend libraries,
+        with a growing interest in building interactive, 3D-inspired projects using Three.js and AI integrations.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Ulwandle Trails</h3>
+        <p>A South African travel website showcasing destinations, TikTok highlights, and virtual tours.</p>
+        <p><strong>Stack:</strong> HTML, CSS, JavaScript, Three.js</p>
+      </div>
+
+      <div class="project">
+        <h3>FocusFlow</h3>
+        <p>A productivity tracker web app with dark mode, progress bars, and PWA functionality.</p>
+        <p><strong>Stack:</strong> React, JavaScript, Service Worker, CSS</p>
+      </div>
+
+      <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>Portfolio website showcasing projects, skills, and contact information for freelance opportunities.</p>
+        <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+      </div>
+
+      <div class="project">
+        <h3>SceneVerse</h3>
+        <p>A sci-fi themed project combining storytelling, 3D visuals, and modern UI components.</p>
+        <p><strong>Stack:</strong> Three.js, React, CSS</p>
+      </div>
+
+      <div class="project">
+        <h3>Glow Up Lamp</h3>
+        <p>Landing page for a modern product with animations and mobile-first responsive design.</p>
+        <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+        <li>React, Three.js, Frontend Development Libraries</li>
+        <li>Responsive Design & Accessibility</li>
+        <li>UI/UX Design Fundamentals</li>
+        <li>Git & GitHub</li>
+        <li>REST APIs Integration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Zakariyya Park Secondary School</strong><br />
+      NSC  • 2023</p>
+      <p><strong>Tshwane North TVET College</strong><br />
+      N4 Certificate in Tourism • 2025</p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>FreeCodeCamp – Frontend Development Libraries</li>
+        <li>FreeCodeCamp - Responsive Web Design</li>
+        
+      </ul>
+    </section>
+
+    <section>
+      <h2>Additional Information</h2>
+      <p><strong>Languages:</strong> English, isiZulu , Afrikaans<br>
+         <strong>Availability:</strong> Open to remote or hybrid opportunities</p>
+    </section>
+  </div>
+</body>
+</html>
